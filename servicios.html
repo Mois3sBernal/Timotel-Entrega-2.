@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Servicios de El Timotel: parqueadero, Wi-Fi, limpieza diaria, seguridad 24/7 y más.">
+<title>Servicios | El Timotel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="encabezado">
+<a class="logo" href="index.html"><i class="fa-solid fa-house-chimney"></i> El Timotel</a>
+<input type="checkbox" id="toggle" class="toggle">
+<label class="btn-menu" for="toggle" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></label>
+<nav class="menu" id="menu" aria-label="Navegación principal">
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="habitaciones.html">Habitaciones</a></li>
+<li><a href="servicios.html" class="activo" aria-current="page">Servicios</a></li>
+<li><a href="informacion.html">Información</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+<a class="boton" href="reservar.html">Reservar ahora</a>
+</nav>
+</header>
+<main>
+<section class="banner"><h1><i class="fa-solid fa-house-chimney"></i> El Timotel</h1></section>
+<section class="contenedor">
+<h2 class="centro">Nuestros servicios</h2>
+<p class="centro sub">Todo lo que necesitas para una estadía cómoda y placentera.</p>
+<div class="rejilla cuatro" id="listaServicios" aria-live="polite"></div>
+</section>
+<section class="contenedor">
+<h2 class="centro">Conoce nuestras instalaciones</h2>
+<div class="rejilla cuatro galeria-inst">
+<figure><img src="img/parqueadero.jpg" alt="Parqueadero techado" width="400" height="220" loading="lazy"><figcaption>Parqueadero</figcaption></figure>
+<figure><img src="img/wifi.jpg" alt="Señal de Wi-Fi gratuito" width="400" height="220" loading="lazy"><figcaption>Wi-Fi gratuito</figcaption></figure>
+<figure><img src="img/terraza.jpg" alt="Terraza con vista a la bahía" width="400" height="220" loading="lazy"><figcaption>Terraza</figcaption></figure>
+<figure><img src="img/toallas.jpg" alt="Toallas limpias en la habitación" width="400" height="220" loading="lazy"><figcaption>Limpieza diaria</figcaption></figure>
+</div>
+</section>
+</main>
+<footer class="pie">
+<ul class="redes">
+<li><a href="https://facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+<li><a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+<li><a href="https://wa.me/573104563427" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
+</ul>
+<p>&copy; 2026 El Timotel. Todos los derechos reservados.</p>
+</footer>
+<script src="js/respaldo.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/servicios.js"></script>
+</body>
+</html>

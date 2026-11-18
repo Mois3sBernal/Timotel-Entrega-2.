@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hospedaje El Timotel: habitaciones cómodas, atención 24 horas y reservas en línea en Sahagún, Córdoba.">
+<title>Inicio | El Timotel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="encabezado">
+<a class="logo" href="index.html"><i class="fa-solid fa-house-chimney"></i> El Timotel</a>
+<input type="checkbox" id="toggle" class="toggle">
+<label class="btn-menu" for="toggle" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></label>
+<nav class="menu" id="menu" aria-label="Navegación principal">
+<ul>
+<li><a href="index.html" class="activo" aria-current="page">Inicio</a></li>
+<li><a href="habitaciones.html">Habitaciones</a></li>
+<li><a href="servicios.html">Servicios</a></li>
+<li><a href="informacion.html">Información</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+<a class="boton" href="reservar.html">Reservar ahora</a>
+</nav>
+</header>
+<main>
+<section class="hero">
+<picture><source media="(min-width: 768px)" srcset="img/portada.jpg"><img src="img/portada.jpg" alt="Habitación de El Timotel" width="400" height="260"></picture>
+<div class="hero-texto"><h1>El Timotel</h1><p>El puerto de tu descanso</p></div>
+</section>
+<section class="destacados" aria-label="Ventajas">
+<article><i class="fa-regular fa-clock"></i><h2>24 horas</h2><p>Atención y servicio las 24 horas del día.</p></article>
+<article><i class="fa-solid fa-bed"></i><h2>Habitaciones cómodas</h2><p>Ambientes limpios y acogedores.</p></article>
+<article><i class="fa-solid fa-shield-halved"></i><h2>Seguridad</h2><p>Tu tranquilidad es nuestra prioridad.</p></article>
+</section>
+<section class="contenedor">
+<div class="fila"><h2>Nuestras habitaciones</h2><a class="enlace" href="habitaciones.html">Ver todas</a></div>
+<div class="rejilla" id="destacadas" aria-live="polite"></div>
+</section>
+</main>
+<footer class="pie">
+<ul class="redes">
+<li><a href="https://facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+<li><a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+<li><a href="https://wa.me/573104563427" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
+</ul>
+<p>&copy; 2026 El Timotel. Todos los derechos reservados.</p>
+</footer>
+<script src="js/respaldo.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/inicio.js"></script>
+</body>
+</html>

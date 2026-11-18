@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Detalle, fotos y precio de la habitación seleccionada en El Timotel.">
+<title>Habitación | El Timotel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="encabezado">
+<a class="logo" href="index.html"><i class="fa-solid fa-house-chimney"></i> El Timotel</a>
+<input type="checkbox" id="toggle" class="toggle">
+<label class="btn-menu" for="toggle" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></label>
+<nav class="menu" id="menu" aria-label="Navegación principal">
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="habitaciones.html" class="activo" aria-current="page">Habitaciones</a></li>
+<li><a href="servicios.html">Servicios</a></li>
+<li><a href="informacion.html">Información</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+<a class="boton" href="reservar.html">Reservar ahora</a>
+</nav>
+</header>
+<main>
+<section class="contenedor">
+<a class="enlace" href="habitaciones.html"><i class="fa-solid fa-arrow-left"></i> Volver a habitaciones</a>
+<article class="detalle" id="detalle" aria-live="polite"></article>
+</section>
+</main>
+<footer class="pie">
+<ul class="redes">
+<li><a href="https://facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+<li><a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+<li><a href="https://wa.me/573104563427" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
+</ul>
+<p>&copy; 2026 El Timotel. Todos los derechos reservados.</p>
+</footer>
+<script src="js/respaldo.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/habitacion.js"></script>
+</body>
+</html>

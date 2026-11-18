@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Reserva tu habitación en El Timotel completando el formulario.">
+<title>Reservar | El Timotel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="encabezado">
+<a class="logo" href="index.html"><i class="fa-solid fa-house-chimney"></i> El Timotel</a>
+<input type="checkbox" id="toggle" class="toggle">
+<label class="btn-menu" for="toggle" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></label>
+<nav class="menu" id="menu" aria-label="Navegación principal">
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="habitaciones.html">Habitaciones</a></li>
+<li><a href="servicios.html">Servicios</a></li>
+<li><a href="informacion.html">Información</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+<a class="boton" href="reservar.html">Reservar ahora</a>
+</nav>
+</header>
+<main>
+<section class="contenedor">
+<h1>Realiza tu reserva</h1>
+<p class="sub">Completa el formulario para asegurar tu habitación.</p>
+<div class="reserva">
+<form class="formulario" id="formReserva" novalidate>
+<h2>Tus datos</h2>
+<p class="aviso-edicion" id="avisoEdicion" hidden></p>
+<label>Nombre completo<input type="text" name="nombre" required minlength="3" placeholder="Ingresa tu nombre completo" autocomplete="name"></label>
+<label>Teléfono<input type="tel" name="telefono" required inputmode="numeric" maxlength="10" placeholder="Ingresa tu número de teléfono" autocomplete="tel"></label>
+<label>Correo electrónico (opcional)<input type="email" name="correo" placeholder="Ingresa tu correo electrónico" autocomplete="email"></label>
+<h2>Fechas de estancia</h2>
+<div class="dos-campos">
+<label>Fecha de llegada<input type="date" name="llegada" required></label>
+<label>Hora de llegada<input type="time" name="hora" required></label>
+</div>
+<label>Fecha de salida<input type="date" name="salida" required></label>
+<label>Habitación<select name="habitacion" required><option value="">Cargando habitaciones...</option></select></label>
+<label>Solicitudes especiales (opcional)<textarea name="especial" rows="2" placeholder="Cuéntanos si tienes alguna solicitud especial"></textarea></label>
+<button class="boton" type="submit" id="botonGuardar">Realizar reserva</button>
+<button class="boton btn-sec" type="button" id="cancelarEdicion" hidden>Cancelar edición</button>
+<p class="peq centro"><i class="fa-solid fa-lock"></i> Tu información está segura con nosotros.</p>
+</form>
+<aside class="resumen" id="infoHabitacion" aria-live="polite"></aside>
+</div>
+</section>
+<section class="contenedor" aria-labelledby="tituloReservas">
+<h2 id="tituloReservas">Mis reservas guardadas</h2>
+<p class="peq">Se guardan en este navegador y siguen ahí aunque recargues la página.</p>
+<div class="lista-reservas" id="listaReservas" aria-live="polite"></div>
+</section>
+</main>
+<footer class="pie">
+<ul class="redes">
+<li><a href="https://facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+<li><a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+<li><a href="https://wa.me/573104563427" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
+</ul>
+<p>&copy; 2026 El Timotel. Todos los derechos reservados.</p>
+</footer>
+<script src="js/respaldo.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/reservar.js"></script>
+</body>
+</html>
